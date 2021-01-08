@@ -1,0 +1,26 @@
+body{
+    background-color: #202020;
+    color: #FFFFFF;
+    font-family: "Baby School", serif;
+}
+.title{
+    text-align: center;
+    font-size: 50px;
+    color: red;
+}
+#affiche_date{
+    text-align: center;
+    font-size: 25px;
+}
+.container {
+    display: flex;
+    margin-left: 24%;
+}
+.container h1 {
+    margin: 0 20px;
+}
+.canvas {
+    margin-left: 35%;
+    width: 500px;
+    height: 500px;
+}

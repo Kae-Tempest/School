@@ -1,0 +1,30 @@
+body{
+    background-color: #303030;
+    color: white;
+    width: 1024px;
+    margin: 0 auto;
+}
+header {
+    display: flex;
+    align-items: center;
+}
+header h1 {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 300px;
+    display: block;
+    line-height: 182%;
+}
+
+.navbar{
+    font-size: 20px;
+    list-style: none;
+    float: right;
+}
+.navbar li {
+    display: inline;
+    align-items: end;
+}
+.navbar li:hover{
+    color:red;
+}

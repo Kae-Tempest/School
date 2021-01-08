@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <link href="./assets/img/TF.ico" rel="icon" type="shortcut icon">
+    <link href="./css/style.css" rel="stylesheet" type="text/css">
+    <title>Capteur Temperature humidity</title>
+</head>
+<body>
+<h1 class="title">Station Météo</h1>
+<p id="affiche_date"></p>
+<div class="container">
+    <h1>Humidity : XX</h1>
+    <h1>Température : XX</h1>
+    <h1>Température ressentie : XX</h1>
+</div>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.6/Chart.bundle.min.js"></script>
+<div class="canvas"><canvas id="myChart"></canvas></div>
+<script>
+    var ctx = document.getElementById('myChart').getContext('2d');
+    var myChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: ['1h', '2h', '3h','4h'],
+            datasets: [{
+                label: '# of Votes',
+                data: [10, 10, 10,10],
+                label2: '# of Time',
+                data2: [10, 20 ,30 ,40],
+                backgroundColor: [
+                    'rgba(54, 162, 235, 0.2)',
+                ],
+                borderColor: [
+                    'rgba(54, 162, 235, 1)',
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+</script>
+<script src="./js/app.js"></script>
+</body>
+</html>
