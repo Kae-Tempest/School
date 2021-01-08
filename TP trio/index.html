@@ -10,28 +10,41 @@
 <h1 class="title">Station Météo</h1>
 <p id="affiche_date"></p>
 <div class="container">
-    <h1>Humidity : XX</h1>
-    <h1>Température : XX</h1>
-    <h1>Température ressentie : XX</h1>
+    <h1>Humidity : XX</h1>  <!-- Afficher la donnée rendu par l'Arduino en temps reel -->
+    <h1>Température : XX</h1>   <!-- Afficher la donnée rendu par l'Arduino en temps reel -->
+    <h1>Température ressentie : XX</h1> <!-- Afficher la donnée rendu par l'Arduino en temps reel -->
 </div>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.6/Chart.bundle.min.js"></script>
-<div class="canvas"><canvas id="myChart"></canvas></div>
+<div class="canvas">
+    <canvas id="myChart"></canvas>
+</div>
+
+<!-- Graphique -->
 <script>
     var ctx = document.getElementById('myChart').getContext('2d');
     var myChart = new Chart(ctx, {
         type: 'line',
         data: {
-            labels: ['1h', '2h', '3h','4h'],
+            labels: ['1h', '2h', '3h', '4h'], // Timestamps
             datasets: [{
-                label: '# of Votes',
-                data: [10, 10, 10,10],
-                label2: '# of Time',
-                data2: [10, 20 ,30 ,40],
-                backgroundColor: [
-                    'rgba(54, 162, 235, 0.2)',
-                ],
+                label: 'Temperature',
+                data: [8, 13, 18, 23], //Valeur récupéré par l'Arduino
                 borderColor: [
-                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 15, 15, 1)',
+                ],
+                borderWidth: 1
+            }, {
+                label: 'humidity',
+                data: [50, 45, 40, 35], //Valeur récupéré par l'Arduino
+                borderColor: [
+                    'rgba(15, 255, 15, 1)',
+                ],
+                borderWidth: 1
+            }, {
+                label: 'Temperature ressentie',
+                data: [10, 15, 20, 25], //Valeur récupéré par l'Arduino
+                borderColor: [
+                    'rgba(15, 15, 255, 1)',
                 ],
                 borderWidth: 1
             }]
@@ -45,6 +58,7 @@
         }
     });
 </script>
+<!-- Script pour afficher l'heure en temps -->
 <script src="./js/app.js"></script>
 </body>
 </html>
