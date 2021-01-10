@@ -10,55 +10,19 @@
 <h1 class="title">Station Météo</h1>
 <p id="affiche_date"></p> <!--Affiche l'heure et la date en temps reel-->
 <div class="container">
-    <h1>Humidity : XX</h1>  <!-- Afficher la donnée rendu par l'Arduino en temps reel -->
-    <h1>Température : XX</h1>   <!-- Afficher la donnée rendu par l'Arduino en temps reel -->
-    <h1>Température ressentie : XX</h1> <!-- Afficher la donnée rendu par l'Arduino en temps reel -->
+    <h1 id="humidity"></h1>  <!-- Afficher la donnée rendu par l'Arduino en temps reel -->
+    <h1 id="temperature"></h1>   <!-- Afficher la donnée rendu par l'Arduino en temps reel -->
+    <h1 id="temperatureR"></h1> <!-- Afficher la donnée rendu par l'Arduino en temps reel -->
 </div>
+<br>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.6/Chart.bundle.min.js"></script>
 <div class="canvas">
     <canvas id="myChart"></canvas>
 </div>
 
-<!-- Graphique -->
-<script>
-    var ctx = document.getElementById('myChart').getContext('2d');
-    var myChart = new Chart(ctx, {
-        type: 'line',
-        data: {
-            labels: ['1h', '2h', '3h', '4h'], // Timestamps
-            datasets: [{
-                label: 'Temperature',
-                data: [8, 13, 18, 23], //Valeur récupéré par l'Arduino
-                borderColor: [
-                    'rgba(255, 15, 15, 1)',
-                ],
-                borderWidth: 1
-            }, {
-                label: 'humidity',
-                data: [50, 45, 40, 35], //Valeur récupéré par l'Arduino
-                borderColor: [
-                    'rgba(15, 255, 15, 1)',
-                ],
-                borderWidth: 1
-            }, {
-                label: 'Temperature ressentie',
-                data: [10, 15, 20, 25], //Valeur récupéré par l'Arduino
-                borderColor: [
-                    'rgba(15, 15, 255, 1)',
-                ],
-                borderWidth: 1
-            }]
-        },
-        options: {
-            scales: {
-                y: {
-                    beginAtZero: true
-                }
-            }
-        }
-    });
-</script>
 <!-- Script pour afficher l'heure en temps -->
-<script src="js/heure-date.js"></script>
+<script src="./js/heure-date.js"></script>
+<script src="./js/data.js"></script>
+<script src="./js/graph.js"></script>
 </body>
 </html>
