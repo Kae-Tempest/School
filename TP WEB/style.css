@@ -15,16 +15,67 @@ header h1 {
     display: block;
     line-height: 182%;
 }
-
+footer{
+    margin-top: 100px;
+    text-align: center;
+    font-size: 25px;
+}
+.type{
+    position: fixed;
+    right: 0;
+}
 .navbar{
     font-size: 20px;
-    list-style: none;
     float: right;
 }
 .navbar li {
     display: inline;
     align-items: end;
 }
-.navbar li:hover{
+.navbar a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+.navbar a:hover{
     color:red;
+}
+.video-text{
+    padding: 10px;
+    display: flex;
+    border: solid black 3px;
+}
+.text{
+    padding-top: 100px;
+    padding-left: 20px;
+}
+
+.audio-name{
+    padding: 10px;
+    display: flex;
+    border: solid black 3px;
+}
+.name{
+   float: right;
+   padding-left: 50px;
+}
+.allimage{
+    margin-left: 15%;
+    display: inline-table;
+    clear: both;
+    display: table;
+    max-width:100%;
+    height:auto;
+}
+.image {
+    float: left;
+    height: auto;
+    max-width: 100%;
+    padding: 1px;
+}
+.image2{
+    width: 250px;
+}
+.image:hover {
+    opacity: 70%;
 }
