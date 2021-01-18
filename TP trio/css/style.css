@@ -1,3 +1,7 @@
+@font-face {
+    font-family: "Baby School";
+    src: url(../assets/font/BabySchoolItalic.ttf);
+}
 body{
     background-color: #202020;
     color: #FFFFFF;
