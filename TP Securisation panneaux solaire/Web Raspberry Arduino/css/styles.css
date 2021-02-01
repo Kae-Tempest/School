@@ -97,13 +97,13 @@ body {
     font-weight: bold;
     width: 250px;
     margin-top: 350px;
-    margin-right: 50px;
+    margin-right: 100px;
     background-color: rgba(50, 50, 50, 0.8);
     color: white;
     padding: 50px;
     font-size: large;
     outline: none;
-    border: 0;
+    border-radius: 10px;
 }
 
 @media (max-width: 1536px) {
