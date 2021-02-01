@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta name="viewport" content="width=device-width" charset="utf-8">
+        <link rel="stylesheet" href="css/background_styles.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/spinner.css">
+        <link rel="stylesheet" href="css/background_styles%202.css">
+        <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+        <script src="js/script.js" defer></script>
+        <script src="js/jquery-1.8.3.js"></script>
+        <link rel="icon" type="image/jpg" href="ressources/panneau.jpg">
+        <title>Sécurité Panneau Solaire</title>
+    </head>
+    
+    <body>
+       <div class="preload">
+    	<i class="fa fa-spinner fa-spin fa-5x fa-fw"></i><span class="sr-only">Loading...</span>
+       </div>
+       <div class="background">
+        <header>
+            <h1>Sécurité Panneau Solaire</h1>
+            <div class = "carte">
+            <a href = "https://www.saint-erembert.fr/"><img src = "ressources/logo-st-Erembert.jpg" alt="Logo Saint-Érembert" title = "Cliquez pour aller vers Saint-Érembert" class = "logo"></a>
+            <br/>
+            <p class = "text"><strong><u>
+                <br/>
+                <br/>
+                Saint Erembert
+                </u>
+                </strong>
+            </p></div>            
+        </header>           
+        <nav class="navbar">
+            <div class="brand-title"><i class="fa fa-cog fa-spin-slow" aria-hidden="true"></i><span class="sr-only">Loading...</span> Options</div>
+                <a href="#" class="toggle-button">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </a>
+            <div class="navbar-links">
+            <ul>
+                <li><a href="modes.html"><i class="fa fa-power-off" aria-hidden="true"></i> Modes</a></li>
+                <li><a href="mesures.html"><i class="fa fa-database" aria-hidden="true"></i> Mesures</a></li>
+                <li><a href="historique.html"><i class="fa fa-line-chart" aria-hidden="true"></i> Historiques</a></li>
+                <li><a href="contact.html"><i class="fa fa-comments" aria-hidden="true"></i> Contacts</a></li>
+            </ul>
+        </div>
+      </nav>
+    </div>        
+      <script>
+            $(function() {
+                $(".preload").fadeOut(750, function() {
+                    $(body).fadeIn(3000);
+                });
+            });
+      </script>
+    </body>
+</html>
