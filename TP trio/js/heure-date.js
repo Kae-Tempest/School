@@ -30,9 +30,7 @@ function rafraichir() {
     } else {
         var secondes = date.getSeconds();
     }
-    text += jour_semaine + ' ' + jour + ' ' + mois + ' ' + date.getFullYear();
-    text += ' - ';
-    text += heure + ' : ' + minutes + ' : ' + secondes;
+    text += jour_semaine + ' ' + jour + ' ' + mois + ' ' + date.getFullYear() + ' - ' + heure + ' : ' + minutes + ' : ' + secondes;
     document.getElementById('affiche_date').innerHTML = text;
 }
 setInterval('rafraichir()', 1000);
