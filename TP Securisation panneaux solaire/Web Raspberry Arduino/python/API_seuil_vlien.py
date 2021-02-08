@@ -4,7 +4,6 @@ from datetime import datetime
 import time
 from time import strftime
 
-
 f1 = open("../db/historique.txt", "w")
 f1.write("")
 f1.close()
