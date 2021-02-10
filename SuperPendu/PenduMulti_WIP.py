@@ -7,7 +7,7 @@ def PenduMulti():
     class Player:
         def __init__(self, name, life):
             self.name = name
-            self.Life = life
+            self.life = life
 
     player1 = Player(input("Quel est le nom du joueur qui donne le mot a trouvé: "), 100)
     player2 = Player(input("Quel est le nom du joueur qui joue: "), 10)
@@ -30,7 +30,7 @@ def PenduMulti():
     print(custom_fig.renderText('1'))
     print(custom_fig.renderText('Start'))
 
-    while player2.Life > 0:
+    while player2.life > 0:
         print("\nMot à deviner : ", affichage)
         proposition = input("proposer une lettre : ")
 
