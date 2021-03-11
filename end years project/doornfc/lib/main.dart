@@ -10,8 +10,7 @@ class MyApp extends StatelessWidget {
       title: 'Welcome to Flutter',
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Startup Name Generator'),
-          home: RandomWords(),
+          title: Text('Startup Name Generator')
         ),
         body: Center(
           child: RandomWords(),
