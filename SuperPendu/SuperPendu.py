@@ -9,7 +9,6 @@ def gamemode():
     elif solo == "N":
         PenduMulti()
     else:
-        solo = input("Veux tu jouer en Solo Y/N : ")
         gamemode()
 
 gamemode()
