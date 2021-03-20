@@ -16,18 +16,31 @@
  
 #include "NfcTag.h"
 #include <Wire.h>
+#include <Servo.h>
 
+Servo myservo;
 NfcTag nfcTag;
 int led = 5;
 bool flag = false;
 bool preFlag = false;
 void setup(){
+  myservo.attach(9);//connect pin 9 with the control line(the middle line of Servo) 
   Serial.begin(9600);
+  Serial.println("Donner une direction en ° ( 20 ou 150 )");
   pinMode(led,OUTPUT);
   nfcTag.init();
 }
 
 void loop(){
+    int str = Serial.parseInt();
+  switch(str) {
+  case 25:
+    myservo.write(25);
+    break;
+  case 90:
+    myservo.write(95);
+    break;
+  }
   flag = nfcTag.readByte(EEPROM_I2C_LENGTH-1) == 0xff?true:false;
   if(flag != preFlag){
     Serial.println("get remote NFC control signal!");
