@@ -26,7 +26,7 @@ bool preFlag = false;
 void setup(){
   myservo.attach(9);//connect pin 9 with the control line(the middle line of Servo) 
   Serial.begin(9600);
-  Serial.println("Donner une direction en ° ( 20 ou 150 )");
+  Serial.println("Donner une direction en ° ( 25 ou 95 )");
   pinMode(led,OUTPUT);
   nfcTag.init();
 }
@@ -37,7 +37,7 @@ void loop(){
   case 25:
     myservo.write(25);
     break;
-  case 90:
+  case 95:
     myservo.write(95);
     break;
   }
