@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Project de Fin d'année" company="" webLink="http://" view-date="2021-03-11" view-index="0" gantt-divider-location="386" resource-divider-location="300" version="3.0.3005" locale="fr_FR">
+    <description/>
+    <view zooming-state="default:3" id="gantt-chart">
+        <field id="tpd3" name="Nom" width="211" order="0"/>
+        <field id="tpd4" name="Date de début" width="86" order="1"/>
+        <field id="tpd5" name="Date de fin" width="85" order="2"/>
+        <timeline>
+            <![CDATA[7]]>
+        </timeline>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Nom" width="210" order="0"/>
+        <field id="1" name="Rôle par défaut" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="0" name="Problématique ?" color="#8cb6ce" meeting="false" start="2021-03-09" duration="2" complete="0" thirdDate="2021-04-06" thirdDate-constraint="0" priority="4" expand="true">
+            <notes>
+                <![CDATA[Réflexion sur la problématique]]>
+            </notes>
+        </task>
+        <task id="2" name="Composant" color="#8cb6ce" meeting="false" start="2021-03-09" duration="6" complete="0" thirdDate="2021-03-09" thirdDate-constraint="0" priority="4" expand="true">
+            <notes>
+                <![CDATA[Recherche et achat des composant et modules nécessaire pour le projet]]>
+            </notes>
+            <depend id="4" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="4" name="Premier Test" color="#8cb6ce" meeting="false" start="2021-03-17" duration="4" complete="0" thirdDate="2021-03-09" thirdDate-constraint="0" expand="true">
+            <notes>
+                <![CDATA[Reflexion sur le code et réalisation de test avec du premier materiel recu]]>
+            </notes>
+        </task>
+        <task id="7" name="Composant 2" color="#8cb6ce" meeting="false" start="2021-04-01" duration="6" complete="0" thirdDate="2021-03-09" thirdDate-constraint="0" expand="true">
+            <notes>
+                <![CDATA[Achat d'un nouveau shield NFC/RFID, premier model avec un support logiciel plus mis a jour]]>
+            </notes>
+            <depend id="9" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="9" name="Deuxieme Test" color="#8cb6ce" meeting="false" start="2021-04-09" duration="4" complete="0" thirdDate="2021-03-09" thirdDate-constraint="0" expand="true">
+            <notes>
+                <![CDATA[Deuxieme phase de test avec le nouveaux module et adaptation du code]]>
+            </notes>
+            <depend id="11" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="11" name="Premier code fonctionnel ?" color="#8cb6ce" meeting="false" start="2021-04-15" duration="10" complete="0" thirdDate="2021-03-09" thirdDate-constraint="0" expand="true">
+            <notes>
+                <![CDATA[Création d'un premier code fonctionnel avec tout les modules]]>
+            </notes>
+            <depend id="13" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="13" name="Proto" color="#8cb6ce" meeting="false" start="2021-04-29" duration="10" complete="0" thirdDate="2021-03-09" thirdDate-constraint="0" expand="true">
+            <notes>
+                <![CDATA[Prototypage d'une maquête ]]>
+            </notes>
+        </task>
+        <task id="19" name="Diagramme" color="#8cb6ce" meeting="false" start="2021-03-09" duration="50" complete="0" thirdDate="2021-03-11" thirdDate-constraint="0" expand="true">
+            <notes>
+                <![CDATA[Creation des differrents diagrame]]>
+            </notes>
+        </task>
+    </tasks>
+    <resources/>
+    <allocations/>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+</project>
